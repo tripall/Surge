@@ -1,5 +1,5 @@
-let ssidMatched = ($network.wifi.ssid === 'Kun_Dorm_5G' || $network.wifi.ssid === 'Kun_Dorm');
-if (ssidMatched)
+let inWifi = ($network.v4.primaryInterface === "en0");
+if (inWifi)
 {
   $done();
 }
