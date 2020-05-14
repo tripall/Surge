@@ -1,3 +1,5 @@
+#!name=unblock the netease music
+#!system=ios
 [MITM]
 hostname = music.163.com, *.music.163.com
 [Header Rewrite]
