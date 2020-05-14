@@ -1,0 +1,7 @@
+[MITM]
+hostname = music.163.com, *.music.163.com
+[Header Rewrite]
+^http://music.163.com header-replace X-Real-IP 222.64.22.71
+^http://*.music.163.com header-replace X-Real-IP 222.64.22.71
+^http://music.163.com header-replace X-Forwarded-For 222.64.22.71
+^http://*.music.163.com header-replace X-Forwarded-For 222.64.22.71
