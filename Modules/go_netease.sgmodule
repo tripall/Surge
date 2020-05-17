@@ -1,9 +1,8 @@
 #!name=unblock the netease music
 #!system=ios
 [MITM]
-hostname = music.163.com, *.music.163.com
+hostname = %APPEND% music.163.com, *.music.126.net
 [Header Rewrite]
-^http://music.163.com header-replace X-Real-IP 222.64.22.71
-^http://*.music.163.com header-replace X-Real-IP 222.64.22.71
-^http://music.163.com header-replace X-Forwarded-For 222.64.22.71
-^http://*.music.163.com header-replace X-Forwarded-For 222.64.22.71
+^*://music.163.com/* header-del X-Real-IP
+^*://music.163.com/* header-add X-Real-IP 211.161.244.70
+^*://*.music.126.net/* header-replace Cache-Control no-cache
