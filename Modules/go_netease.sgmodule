@@ -6,3 +6,5 @@ hostname = %APPEND% music.163.com, *.music.126.net
 ^*://music.163.com/* header-del X-Real-IP
 ^*://music.163.com/* header-add X-Real-IP 211.161.244.70
 ^*://*.music.126.net/* header-replace Cache-Control no-cache
+[URL Rewrite]
+^https?://.*?/eapi/ http://music.163.com/eapi/ header
