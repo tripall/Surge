@@ -13,6 +13,7 @@ hostname = %APPEND% music.163.com, *.music.163.com, 39.105.63.80, 45.254.48.1, 4
 ^https?:\/\/59.111.181.60 header-add X-Real-IP 211.161.244.70
 ^https?:\/\/59.111.160.195 header-add X-Real-IP 211.161.244.70
 ^https?:\/\/59.111.160.197 header-add X-Real-IP 211.161.244.70
+^https?:\/\/59.111.181.35 header-add X-Real-IP 211.161.244.70
 ^https?:\/\/59.111.238.29 header-add X-Real-IP 211.161.244.70
 ^https?:\/\/101.71.154.241 header-add X-Real-IP 211.161.244.70
 ^https?:\/\/103.126.92.132 header-add X-Real-IP 211.161.244.70
